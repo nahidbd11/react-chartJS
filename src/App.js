@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
-import ChartBar from './components/ChartBar';
+import ChartBar from './components/chartjs/ChartBar';
 import { useGraph } from './contextApi/GraphContext';
 
 export default function App() {
