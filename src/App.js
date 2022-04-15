@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import './style.css';
-import ChartBar from './components/chartjs/ChartBar';
-import { useGraph } from './contextApi/GraphContext';
+import React, { useState } from "react";
+import "./style.css";
+import ChartBar from "./components/chartjs/ChartBar";
+import { useGraph } from "./contextApi/GraphContext";
+import LineRechart from "./components/recharts/LineRechart";
 
 export default function App() {
-  const { playerData } = useGraph();
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-      <ChartBar chartData={playerData} />
-    </div>
-  );
+	const { playerData } = useGraph();
+	return (
+		<div>
+			<ChartBar chartData={playerData} />
+			<LineRechart />
+		</div>
+	);
 }

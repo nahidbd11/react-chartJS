@@ -1,7 +1,21 @@
-h1, p {
-  font-family: Lato;
+h1,
+p {
+	font-family: Lato;
 }
 
-.chart{
-  max-width: 500px;
+.chart {
+	max-width: 500px;
+}
+
+.recharts-curve {
+	animation: chartanim 1s ease-in-out infinite;
+}
+
+@keyframes chartanim {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
 }
